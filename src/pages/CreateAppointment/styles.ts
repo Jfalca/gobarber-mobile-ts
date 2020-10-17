@@ -21,7 +21,9 @@ interface HourTextProps {
   selected: boolean;
 }
 
-export const Container = styled.View``;
+export const Container = styled.View`
+  flex: 1;
+`;
 
 export const Header = styled.View`
   padding: 24px;
@@ -32,6 +34,7 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
+
 export const BackButton = styled.TouchableOpacity``;
 
 export const HeaderTitle = styled.Text`
@@ -47,7 +50,9 @@ export const UserAvatar = styled.Image`
   margin-left: auto;
 `;
 
-export const Content = styled.ScrollView``;
+export const Content = styled.ScrollView`
+  flex: 1;
+`;
 
 export const ProvidersListContainer = styled.View``;
 export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
@@ -131,4 +136,18 @@ export const HourText = styled.Text<HourTextProps>`
   color: ${props => (props.selected ? '#232129' : '#f4ede8')};
   font-family: 'RobotoSlab-Regular';
   font-size: 16px;
+`;
+
+export const CreateAppointmentButton = styled(RectButton)`
+  height: 50px;
+  background-color: #ff9000;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px 24px;
+`;
+export const CreateAppointmentButtonText = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  font-size: 18px;
+  color: #232129;
 `;
