@@ -41,6 +41,7 @@
         "@typescript-eslint/ban-types":"off",
         "@typescript-eslint/no-explicit-any":"off",
         "@typescript-eslint/no-unused-vars":"off",
+        "import/no-duplicates":"off",
         "no-shadow":"off",
         "camelcase":"off",
         "import/extensions": [
